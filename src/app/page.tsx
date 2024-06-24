@@ -7,7 +7,7 @@ export default async function Home() {
   // console.log(profile);
   
   return (
-    <main className="flex min-h-screen ">
+    <main className="flex">
       <BackGround />
     </main>
   );
