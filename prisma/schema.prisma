@@ -8,7 +8,7 @@ datasource db {
   directUrl = env("DIRECT_URL")
 }
 
-model User {
+model Profile {
   id         String      @id @default(uuid())
   userId     String      @unique
   name       String
@@ -33,7 +33,7 @@ model Portfolio {
   userId      String
   name        String
   stocks      PortfolioStock[]
-  user        User        @relation(fields: [userId], references: [id])
+  user        Profile      @relation(fields: [userId], references: [id])
   createdAt   DateTime    @default(now())
   updatedAt   DateTime    @updatedAt
 }

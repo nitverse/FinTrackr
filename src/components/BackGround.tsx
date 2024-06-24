@@ -1,3 +1,4 @@
+import { UserButton } from "@clerk/nextjs";
 import { MoveRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -22,6 +23,7 @@ const BackGround = () => {
         <p className="text-4xl sm:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-8">
           FinTrackr
         </p>
+        <UserButton />
         <Link href="/dashboard">
           <button className="relative mt-8 flex justify-center h-16 w-48 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-slate-700 focus:ring-offset-2 focus:ring-offset-slate-50 hover:bg-slate-850">
             <span className="absolute inset-[-100%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
