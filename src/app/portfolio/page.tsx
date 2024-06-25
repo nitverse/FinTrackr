@@ -17,9 +17,9 @@ const Page = async () => {
     <div className="flex flex-col">
       <h1 className="text-5xl">Portfolios</h1>
       <div>
-        <ul>
+        <ul className="gap-y-2">
           {portfolios.map((portfolio) => (
-            <li key={portfolio.id}>{portfolio.name}</li>
+            <li className="cursor-pointer text-2xl" key={portfolio.id}>{portfolio.name}</li>
           ))}
         </ul>
       </div>
