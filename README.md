@@ -36,24 +36,15 @@ To get started with FinTrackr, follow these steps:
 2. **Install dependencies**:
     ```bash
     cd fintrackr
-    npm install
+    bun install
     ```
-
-3. **Set up environment variables**:
-    Create a `.env` file in the root directory and add your environment variables:
-    ```env
-    NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
-    NEXT_PUBLIC_SUPABASE_ANON_KEY=your-supabase-anon-key
-    CLERK_FRONTEND_API=your-clerk-frontend-api
-    GOOGLE_FINANCE_API_KEY=your-google-finance-api-key
-    ```
-
-4. **Run the development server**:
+    
+3. **Run the development server**:
     ```bash
-    npm run dev
+    bun dev
     ```
 
-5. **Open your browser**:
+4. **Open your browser**:
     Navigate to http://localhost:3000 to see the app in action.
 
 ## Contributing
